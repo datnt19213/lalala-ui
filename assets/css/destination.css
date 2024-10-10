@@ -1,0 +1,62 @@
+.is-absolute1 {
+  position: absolute !important;
+  max-height: 17.125rem;
+  margin-left: -20%;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  aspect-ratio: 4/3;
+  top: 10%;
+}
+.is-absolute2 {
+  position: absolute !important;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  margin-left: 50%;
+  bottom: -5rem;
+  transform: translateX(-50%);
+  min-width: 30rem;
+}
+
+.padding-around {
+  padding: 0rem;
+}
+
+@media screen and (max-width: 75rem) {
+  .is-absolute1 {
+    margin-left: -12%;
+    top: 8%;
+    max-height: 14rem;
+  }
+
+  .padding-around {
+    margin: 0rem auto;
+    max-width: 37.5rem;
+    padding-left: 5rem 5rem 5rem 15rem;
+  }
+  .is-absolute2 {
+    min-width: 26rem;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .is-absolute1 {
+    margin-left: 0rem;
+    position: relative !important;
+    max-height: none;
+    width: 100%;
+  }
+  .destination-column {
+    gap: 4rem;
+  }
+  .is-absolute2 {
+    min-width: none;
+    width: 100%;
+    position: relative !important;
+    top: 0rem;
+  }
+  .padding-around {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
